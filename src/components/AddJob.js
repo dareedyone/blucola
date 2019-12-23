@@ -72,7 +72,7 @@ class AddJob extends Component {
 											</div>
 										</div>
 										<div className="form-group">
-											<button className="btn btn-primary form-control">Submit</button>
+											<button className="btn moreBtn text-white form-control">Submit</button>
 										</div>
 									</form>
 								</div>

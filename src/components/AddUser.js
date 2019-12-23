@@ -18,7 +18,7 @@ class AddUser extends Component {
 												placeholder="Add Client" 
 											/>
 										</div>
-										<button type="submit" className="btn btn-success ml-3">Add to List</button>
+										<button type="submit" className="btn moreBtn text-white ml-3">Add to List</button>
 									</form>
 									<small className="text-success">Added Successfully</small>
 								</div>

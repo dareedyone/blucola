@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Index from './components/Index';
 import AdminDashboard from './components/AdminDashboard';
 import UserDashboard from './components/UserDashboard';
+import About from './components/About';
 import Register from './components/Register';
 import Login from './components/Login';
 import NotFound from './components/NotFound';
@@ -19,6 +20,7 @@ class App extends React.Component{
 					<Route path="/dashboard" component = { UserDashboard } />
 					<Route path="/register" component = { Register } />
 					<Route path="/login" component = { Login } />
+					<Route path="/about" component = { About } />
 					<Route path="*" component = { NotFound } />
 				</Switch>
 	    	</Router>

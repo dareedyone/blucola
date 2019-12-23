@@ -52,6 +52,11 @@ i{
 }
 .contact{
 	background: #031531 !important;
+	width: 100%;
 	color: #f4f4f4 !important;
 	height: 30vh;
+	text-align: left;
+}
+.contact p{
+	font-size: 13px;
 }

@@ -7,7 +7,7 @@ import Profile from './Profile';
 import Workers from  './Workers';
 import AddUser from './AddUser';
 import Category from './Category';
-import Contribution from './Contribution';
+import CreateBlog from './CreateBlog';
 import Setting from './Setting';
  
 class AdminDashboard extends Component {
@@ -30,7 +30,7 @@ class AdminDashboard extends Component {
 						 		        <Route path={`/admin/users`} component={ AddUser } />
 						 		        <Route path={`/admin/category`} component={ Category } />
 						 		        <Route path={`/admin/workers`} component={ Workers } />
-						 		        <Route path={`/admin/contribution`} component={ Contribution } />
+						 		        <Route path={`/admin/blog`} component={ CreateBlog } />
 						 		        <Route path={`/admin/setting`} component={ Setting } />
 					        		</Switch>
 								</div>

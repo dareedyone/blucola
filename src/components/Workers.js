@@ -11,6 +11,7 @@ class Workers extends Component {
 							<h2 className="text-center mt-2">Workers</h2>
 							<div className="card border-0 shadow routeCard">
 								<div className="card-body mx-auto">
+									<center className="mb-2"><small className="text-success">You have successfully added worker to Job</small></center>
 									<form className="form-inline">
 										<div className="form-group">
 											<input className="form-control mr-4" 
@@ -24,15 +25,15 @@ class Workers extends Component {
 												placeholder="Add Job" 
 											/>
 										</div>
-										<button type="submit" className="btn btn-success ml-3">Add to List</button>
+										<button type="submit" className="btn moreBtn ml-3 text-white">Add to List</button>
 									</form>
-									<small className="text-success text-center">Added Successfully</small>
 								</div>
 							</div>
 							<div className="row">
 								<div className="col-12">
 									<div className="card">
 										<div className="card-body">
+										<h5>Total Workers</h5>
 											<table className="table table-responsive table-striped">
 												<thead>
 													<tr>
