@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './assets/index.css';
+import { Link } from 'react-router-dom';
 
 class Display extends Component {
 	render() {
@@ -13,7 +14,7 @@ class Display extends Component {
 		                			<h2 className="mt-2 mb-3">Provides Expert Services</h2>
 		                			<h4 className="mb-3">Join our list of Distinguished Clients</h4>
 		                			<h6>Join now experience an excellent project</h6>
-		                  			<button type="button" className="text-white mt-3" id="mybtn">Click to Join</button>	
+		                  			<button type="button" className="text-white mt-3" id="mybtn"><Link to="/register" className="text-white">Click to Join</Link></button>	
 		                		</div>
 		                	</div>
 		                </div>
@@ -104,7 +105,7 @@ class Display extends Component {
 					        	<p className="text-center"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
 									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...
 								</p>
-								<button className="btn readmore text-white">Read More</button>
+								<button className="btn readmore text-white"><Link to="/about" className="text-white">Read More</Link></button>
 			        		</div>
 		        		</div>
 		        	</div>
@@ -117,13 +118,16 @@ class Display extends Component {
 					    	<li data-target="#demo" data-slide-to="0" className="active"></li>
 					    	<li data-target="#demo" data-slide-to="1"></li>
 					    	<li data-target="#demo" data-slide-to="2"></li>
+					    	<li data-target="#demo" data-slide-to="3"></li>
+					    	<li data-target="#demo" data-slide-to="4"></li>
+					    	<li data-target="#demo" data-slide-to="5"></li>
 					  	</ul>
 					  	<div className="carousel-inner">
 					    	<div className="carousel-item active">
 					      		<img src={require('./assets/images/laptop.jpg')} alt="Computer/ICT" width="1100" height="500" />
 					      		<div className="carousel-caption">
 					        		<h3>Computer/ICT</h3>
-					        		<p>Involved in Software, Website development and Security Operations</p>
+					        		<p>Software, Website development and Database Management</p>
 					      		</div>   
 					    	</div>
 					    	<div className="carousel-item">
@@ -144,7 +148,7 @@ class Display extends Component {
 					      		<img src={require('./assets/images/network.jpg')} alt="Electrical" width="1100" height="500" />
 					      		<div className="carousel-caption">
 					        		<h3>Electrical</h3>
-					        		<p>Prvides Services in Electrical and electronic Engineering</p>
+					        		<p>Provides Services in Electrical and electronic Engineering</p>
 					      		</div>   
 					    	</div>
 					    	<div className="carousel-item">
@@ -162,63 +166,80 @@ class Display extends Component {
 					      		</div>   
 					    	</div>
 						</div>
-						<a className="carousel-control-prev" href="#demo" data-slide="prev">
+						<Link to="/" className="carousel-control-prev" data-slide="prev">
 					    	<span className="carousel-control-prev-icon"></span>
-						</a>
-						<a className="carousel-control-next" href="#demo" data-slide="next">
+						</Link>
+						<Link to="/" className="carousel-control-next" data-slide="next">
 					    	<span className="carousel-control-next-icon"></span>
-						</a>
+						</Link>
 					</div>
 		        </div>
 		        <hr/>
 		        <div className="container blog">
 		        	<h3 className="text-center">Blogs</h3>
 		        	<div className="row">
-		        		<div className="col-lg-6 col-md-6 col-12">
+		        		<div className="col-lg-6 col-md-6 col-12 shadow">
 		        			<small>December 12, 2019</small>
 		        			<h5 className="m-1 text-lead">There is stand-up party for the SQI</h5>
 		        			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-		        			<button className="btn btn-primary">Read More</button>
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+		        			<button className="btn btn-primary"><Link to="/login" className="text-white">Read More</Link></button>
 		        		</div>
-		        		<div className="col-lg-6 col-md-6 col-12">
+		        		<div className="col-lg-6 col-md-6 col-12 shadow">
 		        			<small>December 12, 2019</small>
 		        			<h5 className="m-1 text-lead">There is stand-up party for the SQI</h5>
 		        			<p> t amet, consectetur adipisicing elit, sed do eiusmod
 								unt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-		        			<button className="btn btn-primary">Read More</button>
+		        			<button className="btn btn-primary"><Link to="/login" className="text-white">Read More</Link></button>
 		        		</div>
-		        		<div className="col-lg-6 col-md-6 col-12">
+		        		<div className="col-lg-6 col-md-6 col-12 shadow">
 		        			<small>December 12, 2019</small>
 		        			<h5 className="m-1 text-lead">There is stand-up party for the SQI</h5>
 		        			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								iqua. Ut enim ad minim veniam...</p>
-		        			<button className="btn btn-primary">Read More</button>
+		        			<button className="btn btn-primary"><Link to="/login" className="text-white">Read More</Link></button>
 		        		</div>
-		        		<div className="col-lg-6 col-md-6 col-12">
+		        		<div className="col-lg-6 col-md-6 col-12 shadow">
 		        			<small>December 12, 2019</small>
 		        			<h5 className="m-1 text-lead">There is stand-up party for the SQI</h5>
 		        			<p> Lorem ipsu sed do eiusmod tempor incididunt ut labore et dolo
 		        				re magna alim veniam...</p>
-		        			<button className="btn btn-primary">Read More</button>
+		        			<button className="btn btn-primary"><Link to="/login" className="text-white">Read More</Link></button>
 		        		</div>
-		        		<div className="col-lg-6 col-md-6 col-12">
+		        		<div className="col-lg-6 col-md-6 col-12 shadow">
 		        			<small>December 12, 2019</small>
 		        			<h5 className="m-1 text-lead">There is stand-up party for the SQI</h5>
 		        			<p> Lorem ipsum dolor sit od
 								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-		        			<button className="btn btn-primary">Read More</button>
+		        			<button className="btn btn-primary"><Link to="/login" className="text-white">Read More</Link></button>
 		        		</div>
-		        		<div className="col-lg-6 col-md-6 col-12">
+		        		<div className="col-lg-6 col-md-6 col-12 shadow">
 		        			<small>December 12, 2019</small>
 		        			<h5 className="m-1 text-lead">There is stand-up party for the SQI</h5>
 		        			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								tempor incididunt ut...</p>
-		        			<button className="btn btn-primary">Read More</button>
+		        			<button className="btn btn-primary"><Link to="/login" className="text-white">Read More</Link></button>
 		        		</div>
 		        	</div>
 		        </div>
 		        <hr/>
+		        <div className="container">
+			        <h5>Recents Comments</h5>
+					<div className="media border p-3">
+						<img src={require('./assets/images/male.jpg')} alt="male" className="mr-5 mt-1 rounded adminimg"/>
+						<div className="media-body">
+						    <h4 className="mr-2">John Doe <small><i>Sep 29, 2019, 9:12 PM</i></small></h4>
+						    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div className="media border p-3">
+						<img src={require('./assets/images/male.jpg')} alt="male" className="mr-5 mt-1 rounded adminimg"/>
+						<div className="media-body">
+						    <h4 className="mr-2">Bo <small><i>Sep 28, 2019, 10:00 PM</i></small></h4>
+						    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+						</div>
+					</div>
+		        </div>
 		        <div className="w-100 contact">
 		        	<div className="container p-2">
 		        		<h3 className="text-center">Contact Us</h3>
@@ -226,10 +247,14 @@ class Display extends Component {
 		        			<div className="col-md-6 text-center">
 		        				<h5>Head Office</h5>
 		        				<p>No 20, SQI Headquaters, Sqi zone</p>
+		        				<p>Email: blucola@mail.com</p>
+		        				<p>Telephone: +23454323454</p>
 		        			</div>
 		        			<div className="col-md-6 text-center">
 		        				<h5>Branch Offices</h5>
 		        				<p>No 20, SQI branch, Sqi zone</p>
+		        				<p>Email: blucola@mail.com</p>
+		        				<p>Telephone: +23454323454</p>
 		        			</div>
 		        		</div>
 		        	</div>

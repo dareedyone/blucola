@@ -27,6 +27,11 @@ class SideNav extends Component {
 						</Link>
 					</li>
 					<li className="nav-item sidelink">
+						<Link to={`/admin/blog`} className="text-white">
+							<i className="h4 fa fa-blog mx-auto"><span className="tooltext h5 text-center">Blog</span></i>
+						</Link>
+					</li>
+					<li className="nav-item sidelink">
 						<Link to={`/admin/setting`} className="text-white">
 							<i className="h4 fa fa-tools mx-auto"><span className="tooltext h5 text-center">Setting</span></i>
 						</Link>

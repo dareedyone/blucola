@@ -22,7 +22,7 @@ class Setting extends Component {
 											<input type="password" name="password2" className="form-control" placeholder="Confirm Password" />
 										</div>
 										<div className="form-group">
-											<button type="submit" className="btn btn-block btn-success">Change Password</button>
+											<button type="submit" className="btn btn-block moreBtn text-white">Change Password</button>
 										</div>
 									</form>
 								</div>

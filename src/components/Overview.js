@@ -6,6 +6,7 @@ class Overview extends Component {
 		return (
 			<React.Fragment>
 				<div className="container-fluid pt-3">
+				<h3 className="text-lead"><strong>My Dashboard</strong></h3>
 					<h5 className="text-lead">Profile</h5>
 					<div className="row">
 						<div className="col-12">
@@ -15,7 +16,7 @@ class Overview extends Component {
 									<p>Email : </p>
 									<p>Phone Number : </p>
 									<div className="text-center">
-										<button className="btn btn-primary"><Link to={`admin/profile`}>Update Profile</Link></button>
+										<button className="btn moreBtn"><Link to={`admin/profile`} className="text-white">Update Profile</Link></button>
 									</div>
 								</div>
 							</div>
@@ -30,17 +31,17 @@ class Overview extends Component {
 							</div>
 						</div>
 						<div className="col-3">
-							<div className="card">
+							<div className="card admincard">
 								<div className="card-body"><span className="fa fa-sign-out-alt">Participants</span></div>
 							</div>
 						</div>
 						<div className="col-3">
-							<div className="card">
+							<div className="card admincard">
 								<div className="card-body"><span className="fa fa-sign-out-alt">Users</span></div>
 							</div>
 						</div>
 						<div className="col-3">
-							<div className="card">
+							<div className="card admincard">
 								<div className="card-body"><span className="fa fa-sign-out-alt">Views</span></div>
 							</div>
 						</div>
@@ -122,7 +123,7 @@ class Overview extends Component {
 									</tr>
 								</tbody>
 							</table>
-							<button className="btn btn-lg btn-secondary">More Countries<span className="fa fa-sign-out-alt ml-1"></span></button>
+							<button className="btn moreBtn btn-secondary">More Countries<span className="fa fa-sign-out-alt ml-1"></span></button>
 						</div>
 					</div>
 					<hr className="bg-secondary"></hr>
@@ -131,13 +132,13 @@ class Overview extends Component {
 						<table className="table table-striped border-none shadow-lg">
 							<tbody>
 								<tr>
-									<td><img src=""alt="" className="rounded-circle mr-3" height="20px" width="20px"/>Mike</td>
+									<td><img src={require('./assets/images/male.jpg')} alt="male" className="rounded-circle mr-3" height="20px" width="20px"/>Mike</td>
 								</tr>
 								<tr>
-									<td><img src=""alt="" className="rounded-circle mr-3" height="20px" width="20px"/>Jill</td>
+									<td><img src={require('./assets/images/male.jpg')} alt="male" className="rounded-circle mr-3" height="20px" width="20px"/>Jill</td>
 								</tr>
 								<tr>
-									<td><img src=""alt="" className="rounded-circle mr-3" height="20px" width="20px"/>Jane</td>
+									<td><img src={require('./assets/images/male.jpg')} alt="male" className="rounded-circle mr-3" height="20px" width="20px"/>Jane</td>
 								</tr>
 							</tbody>
 						</table>
@@ -146,14 +147,14 @@ class Overview extends Component {
 					<div className="row">
 						<h5>Recents Comments</h5>
 						<div className="media border p-3">
-							<img src="" alt="" className="mr-5 mt-1 rounded adminimg"/>
+							<img src={require('./assets/images/sqilogo.jpg')} alt="sqilogo" className="mr-5 mt-1 rounded adminimg"/>
 							<div className="media-body">
 							    <h4 className="mr-2">John Doe <small><i>Sep 29, 2019, 9:12 PM</i></small></h4>
 							    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
 						</div>
 						<div className="media border p-3">
-							<img src="" alt="" className="mr-5 mt-1 rounded adminimg"/>
+							<img src={require('./assets/images/sqilogo.jpg')} alt="sqilogo" className="mr-5 mt-1 rounded adminimg"/>
 							<div className="media-body">
 							    <h4 className="mr-2">Bo <small><i>Sep 28, 2019, 10:00 PM</i></small></h4>
 							    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>

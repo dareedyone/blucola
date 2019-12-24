@@ -4,7 +4,9 @@ class NotFound extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<p>This is a 404 Page</p>
+				<div className="container-fluid" id="notFound">
+			
+				</div>
 			</React.Fragment>
 		);
 	}

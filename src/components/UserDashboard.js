@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Navbar';
 import UserSidebar from './UserSidebar';
-import Overview from './Overview';
+import UserOverview from './UserOverview';
 import AddJob from './AddJob';
 import Category from './Category';
 import Profile from './Profile';
 import Setting from './Setting';
+import Blogs from './Blogs';
  
 class UserDashboard extends Component {
 
@@ -23,9 +24,9 @@ class UserDashboard extends Component {
 							<div className="row">
 								<div className="col-12">				
 									<Switch>
-										<Route exact path={`/dashboard`} component={ Overview } />
+										<Route exact path={`/dashboard`} component={ UserOverview } />
 							           	<Route path={`/dashboard/profile`} component={ Profile } />
-							           	<Route path={`/dashboard/blogs`} component={ Profile } />
+							           	<Route path={`/dashboard/blogs`} component={ Blogs } />
 							           	<Route path={`/dashboard/category`} component={ Category } />
 						 		        <Route path={`/dashboard/job`} component={ AddJob } /> 
 						 		        <Route path={`/dashboard/setting`} component={ Setting } />
